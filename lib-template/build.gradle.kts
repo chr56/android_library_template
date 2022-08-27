@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
-    id("org.jetbrains.kotlin.android")
+    id("kotlin-android")
+    // id("maven-publish")
 }
 
 android {
@@ -12,6 +13,10 @@ android {
         namespace = "lib.template"
 
         consumerProguardFiles("consumer-rules.pro")
+
+        aarMetadata {
+            minCompileSdk = 24
+        }
     }
 
     buildTypes {
@@ -23,14 +28,40 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
+    }
+
+    publishing {
+        publishing {
+            singleVariant("release") {
+                withSourcesJar()
+            }
+        }
     }
 }
 
 dependencies {
 }
+
+/*
+val libVersion = ""
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+            groupId = ""
+            artifactId = ""
+            version = libVersion
+        }
+    }
+}
+ */

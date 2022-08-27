@@ -1,4 +1,3 @@
-rootProject.buildFileName = "build.gradle.kts"
 
 pluginManagement {
     repositories {
@@ -14,4 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
+rootProject.buildFileName = "build.gradle.kts"
 include(":lib-template")
