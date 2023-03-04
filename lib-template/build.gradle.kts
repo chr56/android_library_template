@@ -57,6 +57,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
 
+    //implementation("com.google.android.material:material:1.8.0")
+
     //implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
 
 }
