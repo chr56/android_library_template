@@ -2,6 +2,8 @@ plugins {
     id("com.android.library")
     id("kotlin-android")
     // id("maven-publish")
+
+    //id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 android {
@@ -48,6 +50,9 @@ android {
 }
 
 dependencies {
+
+    //implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+
 }
 
 /*

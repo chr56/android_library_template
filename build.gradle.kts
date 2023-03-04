@@ -4,4 +4,6 @@ plugins {
 
     id("com.android.library") version apgVersion apply false
     id("org.jetbrains.kotlin.android") version kotlinVersion apply false
+
+    //id("org.jetbrains.kotlin.plugin.serialization") version kotlinVersion apply false
 }
