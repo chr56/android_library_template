@@ -12,7 +12,6 @@ android {
 
     defaultConfig {
         minSdk = 24
-        targetSdk = 33
         namespace = "lib.template"
 
         consumerProguardFiles("consumer-rules.pro")
