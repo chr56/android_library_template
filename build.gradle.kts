@@ -1,9 +1,9 @@
 plugins {
-    val apgVersion = "8.1.2"
-    val kotlinVersion = "1.9.10"
 
-    id("com.android.library") version apgVersion apply false
-    id("org.jetbrains.kotlin.android") version kotlinVersion apply false
+    // alias(libs.plugins.androidGradlePluginLibrary) apply false
+    // alias(libs.plugins.kotlin.jvm) apply false
+    // alias(libs.plugins.kotlin.android) apply false
 
-    //id("org.jetbrains.kotlin.plugin.serialization") version kotlinVersion apply false
+    // alias(libs.plugins.kotlin.serialization) apply false
+    // alias(libs.plugins.kotlin.parcelize) apply false
 }

@@ -1,9 +1,11 @@
 plugins {
-    id("com.android.library")
-    id("kotlin-android")
+    alias(libs.plugins.androidGradlePluginLibrary)
+    alias(libs.plugins.kotlin.android)
     // id("maven-publish")
 
-    //id("org.jetbrains.kotlin.plugin.serialization")
+    // alias(libs.plugins.kotlin.serialization)
+    // alias(libs.plugins.kotlin.parcelize)
+    // alias(libs.plugins.kotlin.ksp)
 }
 
 android {
@@ -50,18 +52,23 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.annotation:annotation:1.7.0")
-    implementation("androidx.activity:activity-ktx:1.8.0")
-    implementation("androidx.fragment:fragment-ktx:1.6.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+    implementation(libs.androidx.core)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.lifecycle.runtime)
 
-    //implementation("com.google.android.material:material:1.9.0")
+    // implementation(libs.androidx.room)
+    // ksp(libs.androidx.room.compiler)
+    // implementation(libs.bundles.compose)
 
-    implementation("com.squareup.okhttp3:okhttp:4.11.0")
+    // implementation(libs.google.material)
 
-    //implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.0")
+    implementation(libs.okhttp3)
+
+//    implementation(libs.kotlinx.coroutines)
+//    implementation(libs.kotlinx.serialization)
 
 }
 
