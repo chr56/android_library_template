@@ -18,4 +18,5 @@ dependencyResolutionManagement {
     }
 }
 
+include(":lib-kotlin")
 include(":lib-android")
