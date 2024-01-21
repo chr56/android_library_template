@@ -1,3 +1,8 @@
+@file:Suppress("UnstableApiUsage")
+
+rootProject.name = "Template"
+rootProject.buildFileName = "build.gradle.kts"
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -13,5 +18,4 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.buildFileName = "build.gradle.kts"
-include(":lib-template")
+include(":lib-android")
