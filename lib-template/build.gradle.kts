@@ -49,6 +49,12 @@ android {
             }
         }
     }
+
+    buildFeatures {
+        buildConfig = false
+        // viewBinding = true
+        // compose = true
+    }
 }
 
 dependencies {
