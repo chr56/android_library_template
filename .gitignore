@@ -47,4 +47,5 @@ gen-external-apklibs
 
 ### signing config ###
 /signing.properties
+/secrets.properties
 
