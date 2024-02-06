@@ -1,11 +1,13 @@
 plugins {
     alias(libs.plugins.androidGradlePluginLibrary)
     alias(libs.plugins.kotlin.android)
-    // id("maven-publish")
 
     // alias(libs.plugins.kotlin.serialization)
     // alias(libs.plugins.kotlin.parcelize)
     // alias(libs.plugins.kotlin.ksp)
+
+    // id("maven-publish")
+    // id("signing")
 }
 
 android {
@@ -83,13 +85,61 @@ val libVersion = ""
 publishing {
     publications {
         create<MavenPublication>("release") {
+
             afterEvaluate {
                 from(components["release"])
             }
+
             groupId = ""
             artifactId = ""
             version = libVersion
+
+
+            pom {
+                name
+                url
+
+                licenses {
+                    license {
+                        name
+                        url
+                    }
+                }
+                developers {
+                    developer {
+                        id
+                        name
+                        timezone
+                    }
+                }
+                scm {
+                    connection
+                    developerConnection
+                    url
+                }
+            }
         }
+    }
+}
+ */
+
+/*
+val secretPropsFile = rootProject.file("secrets.properties")
+var secrets = Properties()
+if (secretPropsFile.exists()) {
+    secretPropsFile.inputStream().use {
+        secrets.load(it)
+    }
+}
+if (secretPropsFile.exists()) {
+    signing {
+        sign(publishing.publications)
+        val key = File(secrets["signing_file"] as String).readText()
+        useInMemoryPgpKeys(
+            secrets["signing_key"] as String,
+            key,
+            secrets["signing_password"] as String
+        )
     }
 }
  */
