@@ -8,7 +8,7 @@ datastore = { strictly = "1.0.0" }
 compose = "1.6.0"
 composeCompiler = "1.5.8"
 coil = "2.5.0"
-room = "2.6.0"
+room = "2.6.1"
 
 [plugins]
 
