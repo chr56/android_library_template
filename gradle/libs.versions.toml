@@ -6,7 +6,7 @@ versionChecker = "0.51.0"
 
 activity = "1.8.2"
 datastore = "1.0.0"
-compose = "1.6.0"
+compose = "1.6.2"
 composeCompiler = "1.5.8"
 coil = "2.5.0"
 room = "2.6.1"
