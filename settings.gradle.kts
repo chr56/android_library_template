@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-rootProject.name = "Template"
+rootProject.name = "Android Library Template"
 rootProject.buildFileName = "build.gradle.kts"
 
 pluginManagement {
