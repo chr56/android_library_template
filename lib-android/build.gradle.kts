@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.androidGradlePluginLibrary)
-    alias(libs.plugins.kotlin.android)
 
     // alias(libs.plugins.kotlin.serialization)
     // alias(libs.plugins.kotlin.parcelize)
